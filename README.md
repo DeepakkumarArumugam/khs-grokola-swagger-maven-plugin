@@ -7,25 +7,25 @@ The Grokola Swagger Integration Maven Plugin can be used with Maven projects to 
 ## Getting Started
 Add this plugin to the build/plugins section of your API project's pom.xml like so:
 ```xml
-			<plugin>
-				<groupId>com.khs</groupId>
-				<artifactId>khs-grokola-swagger-maven-plugin</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-				<configuration>			
-					<grokolaBaseUrl>https://beta.grokola.com</grokolaBaseUrl>
-					<grokolaCategory>Miscellaneous</grokolaCategory>
-					<grokolaAuthToken>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</grokolaAuthToken>
-					<swaggerJsonFile>src/main/resources/static/swagger.json</swaggerJsonFile>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>install</phase>
-						<goals>
-							<goal>grokola-swagger-upload</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+<plugin>
+	<groupId>com.khs</groupId>
+	<artifactId>khs-grokola-swagger-maven-plugin</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<configuration>			
+		<grokolaBaseUrl>https://beta.grokola.com</grokolaBaseUrl>
+		<grokolaCategory>Miscellaneous</grokolaCategory>
+		<grokolaAuthToken>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</grokolaAuthToken>
+		<swaggerJsonFile>src/main/resources/static/swagger.json</swaggerJsonFile>
+	</configuration>
+	<executions>
+		<execution>
+			<phase>install</phase>
+			<goals>
+				<goal>grokola-swagger-upload</goal>
+			</goals>
+		</execution>
+	</executions>
+</plugin>
 ```
 In the `configuration` section, specify the following settings:
 
